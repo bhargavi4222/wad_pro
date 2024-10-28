@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .p-card {
+    display: flex;
+    flex-direction: row; /* Display images side by side */
+    justify-content: space-between; /* Add space between images */
+    align-items: center; /* Center images vertically */
+  }
+  
+  .p-card img {
+    max-width: 300px; /* Set a maximum width for responsive display */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Ensure the header and nav are in a single line */
+/* Flexbox for the header to align items */
+.header {
+  background-color: #d1b3d1; /* Adjust to your desired color */
+  padding: 10px;
+}
+
+/* Flexbox for nav container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Flexbox for navigation links to align them to the right */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for individual list items */
+.nav-links li {
+  margin-left: 20px;
+}
+
+/* Style for individual navigation links */
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Hover effect for navigation links */
+.nav-links li a:hover {
+  color: #ccc; /* Adjust as needed */
+}
+
+
+.what-we-care-for {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.care-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.care-item {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.care-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.care-item h3 {
+    margin: 5px 0;
+}
+
+.care-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+  .p-card {
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .p-card {
+      flex: 1 1 calc(33.33% - 20px); /* Show 3 per row on medium screens */
+      max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .p-card {
+      flex: 1 1 calc(50% - 20px); /* Show 2 per row on smaller screens */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .p-card {
+      flex: 1 1 100%; /* Show 1 per row on small screens */
+      max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .care-section {
+    padding: 20px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .care-section {
+      flex: 1 1 calc(33.33% - 20px); /* Show 3 per row on medium screens */
+      max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .care-section {
+      flex: 1 1 calc(50% - 20px); /* Show 2 per row on smaller screens */
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .care-section {
+      flex: 1 1 100%; /* Show 1 per row on small screens */
+      max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .content {
+      flex: 1 1 100%; /* Show 1 per row on small screens */
+      max-width: 100%;
+  }
+}

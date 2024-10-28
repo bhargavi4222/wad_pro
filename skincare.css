@@ -1,0 +1,18 @@
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
+}
+
+.product-card {
+    width: 25%;
+    text-align: center;
+    height: auto; /* Remove fixed height to allow cards to expand */
+    max-height: 300px; /* Set a maximum height if needed */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}

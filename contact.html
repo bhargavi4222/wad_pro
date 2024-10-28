@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - School Management System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us. We will get back to you as soon as possible.</p>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <form id="contactForm">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" style="background-color: #cdb4db; color: black; width: 600px;height: 50px;">Submit</button>
+        </form>
+      </div>
+
+      <div class="contact-details">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> Kanuru,Vijayawada,520007</p>
+        <p><strong>Phone:</strong> +1 234 567 890</p>
+        <p><strong>Email:</strong> skincare@hmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo h1 {
+    color: #003366;
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .contact-us {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .contact-us p {
+    margin-bottom: 30px;
+    color: #777;
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .contact-form {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #003366;
+  }
+
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            background-color: #cdb4db;
+            color: #000;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .product-card {
+            flex: 1 1 calc(25% - 20px); /* Make 4 items fit per row with a gap */
+            max-width: calc(25% - 20px);
+            text-align: center;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto; /* Let the image adjust height automatically */
+            max-height: 250px; /* Ensure images don’t exceed a specific height */
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .product-card a {
+            color: #cdb4db;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .product-card p {
+            color: #333;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .product-card {
+                flex: 1 1 calc(33.33% - 20px); /* Show 3 per row on medium screens */
+                max-width: calc(33.33% - 20px);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .product-card {
+                flex: 1 1 calc(50% - 20px); /* Show 2 per row on smaller screens */
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .product-card {
+                flex: 1 1 100%; /* Show 1 per row on small screens */
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Products</h1>
+    
+    <section class="product-grid">
+       
+        <div class="product-card">
+            <img src="lip.jpg" alt="Nivea Lip Balm">
+            <a href="https://www.firstcry.com/nivea/nivea-lip-care-watermelon-4-8-gm/11028545/product-detail">Nivea Lip Balm</a>
+            <p>₹205</p>
+        </div>
+        <div class="product-card">
+            <img src="p10.jpg" alt="Plum face Serum">
+            <a href="https://www.myntra.com/serum-and-gel/plum/plum-5-niacinamide-face-serum-with-amino-acid-to-fade-blemishes-for-bright-skin---30ml/19959876/buy">Plum Face Serum</a>
+            <p>₹485</p>
+        </div>
+    
+
+        <div class="product-card">
+            <img src="pro1.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://maccaron.in/en/products/anua_heartleaf-pore-control-cleansing-oil-200ml/16927/">Anua Leansing Oil</a>
+            <p>₹1118</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pro2.jpg" alt="Retinext Serum" width="300" height="700">
+           <a href="https://maccaron.in/en/products/anua_heartleaf-quercetinoltm-pore-deep-cleansing-foam/22207/">Anua Deep cleansing Foam</a>
+            <p>₹735</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pro14.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://maccaron.in/en/products/beauty-of-joseon_relief-sun-rice-probiotics-50ml/12537/">Beauty of Joseon probiotics</a>
+            <p>₹900</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pro4.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.myntra.com/face-sunscreen/dear+klairs/dear-klairs-korean-water-based-gel-based-spf-50-pa-all-day-airy-sunscreen---50g/25016322/buy?utm_source=dms_bing_shopping&utm_medium=bing_cpc_shopping&utm_campaign=Bing_Shopping_Campaign&msclkid=d24e1039ef6a18eb6d7d772b4387ca70&utm_term=4578710054651266&utm_content=Personal%20Care">dear klairs Sunscreen</a>
+            <p>₹1490</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pro5.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.amazon.in/Madagascar-Centella-Light-Cleansing-200ml/dp/B0DHL7DZF6/ref=sr_1_5?adgrpid=1320515751980215&dib=eyJ2IjoiMSJ9.twLosNFAzaRvIfxsPMEoojXPk42lLXIn0PGUCOTuHRAHHE6XV6Re6sTdpWeOHsFPXcyWQl9nj1Uo7muUb8xlF91FTru2dJi4AzNY_JO4Y_3QUPZyPQ2pRa_Zl2AE6f8QpD3xnOm6fnk2Ykg7X2EXsF63zLWrmkiKVt2YRdiMmxFWHbGimCX68OCH2qWzUGHKr3HPcgJAlel_7L4-oRylo73VDHMWRt_-VkmiZnujnCCYA9DysuJp4-F7caBtm3P24H_ZQOU-m6lfaUZxwA0bjG4OeiLigb9LTQh4dZ9Z5Xk.hCFtgJljrhl1fFY0qY-mwsiZu__lutkAIlcKLzNbgYs&dib_tag=se&hvadid=82532463171143&hvbmt=bp&hvdev=c&hvlocphy=143885&hvnetw=o&hvqmt=p&hvtargid=kwd-82533132165312%3Aloc-90&hydadcr=22032_2354571&keywords=centella+cleansing+oil&msclkid=5e828139677b1c1ff897e62bca3ba289&qid=1729277254&sr=8-5">Centella Light Cleansing Oil</a>
+            <p>₹2990</p>
+        </div>
+
+        <div class="product-card">
+            <img src="p11.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.myntra.com/toner/plum/-plum-green-tea-alcohol-free-face-toner--150ml/30904616/buy?utm_source=dms_bing_shopping&utm_medium=bing_cpc_shopping&utm_campaign=Bing_Shopping_Campaign&msclkid=aa338d7ae7a510f1033eea6854a3c7c1&utm_term=4578710054651266&utm_content=Personal%20Care">Plum Face Mist</a>
+            <p>₹354</p>
+        </div>
+
+        
+        
+        <div class="product-card">
+            <img src="p3.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.myntra.com/face-sunscreen/the+derma+co./the-derma-co-ultra-light-zinc-mineral-sunscreen-spf-50-pa---50g/26888328/buy?utm_source=dms_bing_shopping&utm_medium=bing_cpc_shopping&utm_campaign=Bing_Shopping_Campaign&msclkid=ee48b45219a515ce514fd340a875b5f3&utm_term=4578710054651266&utm_content=Personal%20Care">Derma Co Sunscreen</a>
+            <p>₹615</p>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="Green_plum_toner.webp" alt="Melarid De-Pigmenting Serum">
+            <a href="https://www.myntra.com/toner/beauty+of+joseon/beauty-of-joseon-green-plum-refreshing-toner---ahabha---150-ml/20375740/buy?utm_source=dms_bing_shopping&utm_medium=bing_cpc_shopping&utm_campaign=Bing_Shopping_Campaign&msclkid=ec21d396193317405cc4b484b53de8a0&utm_term=4578710054651266&utm_content=Personal%20Care">Beauty of Joseon</a>
+            <p>₹1350</p>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="p2.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.myntra.com/serum-and-gel/aqualogica/aqualogica-glow-mousse-night-gel-for-bright-plump-skin---50-g/17893176/buy?utm_source=dms_bing_shopping&utm_medium=bing_cpc_shopping&utm_campaign=Bing_Shopping_Campaign&msclkid=f778c26dcbb61f504a5ba57f7aa426b3&utm_term=4578710054651266&utm_content=Personal%20Care">Aualogical Night gel</a>
+            <p>₹527</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pro12.jpg" alt="Derma Wash Anti-Acne Facewash Gel">
+            <a href="https://www.amazon.in/Beauty-Joseon-Hyperpigmentation-Skincare-Sensitive/dp/B09ZV74JNP/ref=sr_1_12?adgrpid=1317217244903076&dib=eyJ2IjoiMSJ9.ICN">Beauty of Joseoan Glow Serum</a>
+            <p>₹950</p>
+            </div>
+        
+    </section>
+</body>
+</html>
